@@ -13,7 +13,6 @@ class Process():
     def add(self):
         self.sql.execute("INSERT INTO Lib (name,author,page,rate) VALUES('{}','{}','{}','{}')".format( self.name,self.page, self.author,self.rate))#soecfy wwhat shoul u nuse  in it if u dont it takes all of them
         return self.sql.commit()
-
     def erase(self):
         self.silsecim=input("lütfen sileceğiniz objenin id'sini giriniz:")
         self.sql.execute("DELETE FROM Lib WHERE Id='{}'".format(self.silsecim))
@@ -34,7 +33,3 @@ class Process():
         return self.sql.commit()
     def cl(self):
         self.sql.close()
-
-#remember when u are using method thnk of litke a imported shit
-#__init__ let us create a attribute for our object and attributes can also  have sub attirbutes
-#super().__init__(self) lets us define our imports our upper clases atrributes from this
