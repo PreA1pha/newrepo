@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>685</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>685</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menumenu">
+    <property name="title">
+     <string>menu</string>
+    </property>
+    <addaction name="actionmenusecim"/>
+   </widget>
+   <widget class="QMenu" name="menuekle">
+    <property name="title">
+     <string>ekle</string>
+    </property>
+    <addaction name="actionekle"/>
+   </widget>
+   <widget class="QMenu" name="menusil">
+    <property name="title">
+     <string>sil</string>
+    </property>
+    <addaction name="actionsil"/>
+   </widget>
+   <widget class="QMenu" name="menulistele">
+    <property name="title">
+     <string>listele</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuekle_2">
+    <property name="title">
+     <string>ekle</string>
+    </property>
+   </widget>
+   <addaction name="menumenu"/>
+   <addaction name="menuekle"/>
+   <addaction name="menusil"/>
+   <addaction name="menulistele"/>
+   <addaction name="menuekle_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionmenusecim">
+   <property name="text">
+    <string>menusecim</string>
+   </property>
+  </action>
+  <action name="actionekle">
+   <property name="text">
+    <string>ekle</string>
+   </property>
+  </action>
+  <action name="actionsil">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>sil</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
